@@ -25,4 +25,5 @@ Route::middleware('auth:api')->group(function () {
     Route::get('/categories', CategoryController::class);
     Route::post('/reserve', ReservationController::class);
     Route::get('chefs', ChefController::class);
+    Route::get('/products', \App\Http\Controllers\ProductsController::class);
 });
